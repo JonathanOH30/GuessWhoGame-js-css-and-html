@@ -1,0 +1,117 @@
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<audio src="mexicanmusic.mp3" autoplay="autoplay" loop="loop"></audio>
+<title> Adivina Quien: versión Mexicana </title>
+<head>
+    <script defer src="adivina.js"></script>
+    <link rel="stylesheet" href="adivina.css">
+</head>
+
+
+  <body>
+
+
+    <div class="container">
+
+      <div id="bienvenida" class="hide">
+         <img id="LogoB" src="Logo.jpeg" >
+          <h2> Adivina Quién: Versión Mexicana </h2>
+          <h4> Atrevete a jugar este adivina quien donde encontrar&aacutes a los mejores heroes de México </h4>
+          Nombre: <input id="nombre" type="text"></input>
+          <br>
+        </div>
+
+
+        <div id="instrucciones" class="hide">
+          <p id=saludo>... </p>
+          <p> Bienvenido a ADIVINA QUIEN versión mexicana, ahora aleatoriamente le tocará a alguno de nosotros jugar. ¿Estas listo? </p>
+          <p> Recuerda bien nuestros personajes: KALIMAN , CHAPULIN COLORADO, EL GATO NEGRO, ZOOMAN, EL SANTO, MAMA LUCHA, QUETZALCOATL Y EL ZORRO </p>
+          <div id="tablero">
+            <img id="Kaliman" src="Kaliman.jpg">
+            <img id="Chapulin" src="Chapulin.jpg">
+            <img id="GatoNegro" src="Gato.jpg">
+            <br>
+            <img id="Zooman" src="Zooman.jpg">
+            <img id="Logo" src="Logo.jpeg">
+            <img id="Santo" src="Santo.jpg">
+            <br>
+            <img id="MLucha" src="MLucha.jpg">
+            <img id="Quetzal" src="Quetzal.jpg">
+            <img id="Zorro" src="Zorro.jpg">
+          </div>
+        </div>
+
+        <div id="juego" class="hide">
+          <h2> TU TURNO, ADIVINA MI PERSONAJE </h2>
+          <div id="tablero-juego">
+            <img id="Kaliman" src="Kaliman.jpg">
+            <img id="Chapulin" src="Chapulin.jpg">
+            <img id="GatoNegro" src="Gato.jpg">
+            <br>
+            <img id="Zooman" src="Zooman.jpg">
+            <img id="Logo" src="Logo.jpg">
+            <img id="Santo" src="Santo.jpg">
+            <br>
+            <img id="MLucha" src="MLucha.jpg">
+            <img id="Quetzal" src="Quetzal.jpg">
+            <img id="Zorro" src="Zorro.jpg">
+          </div>
+          <h2 id="salida"> Estoy esperando... </h2>
+          <div id="preguntas-buttons" class="btn-grid">
+          <button onclick="startGame(0)"class="boton">0. ¿Tu personaje es hombre?</button>
+          <button onclick="startGame(1)"class="boton">1. ¿Tu personaje tiene mascara?</button>
+          <button onclick="startGame(2)"class="boton">2. ¿Tu personaje tiene arma?</button>
+          <button onclick="startGame(3)"class="boton">3. ¿Tu personaje tiene poderes?</button>
+          <button onclick="startGame(4)"class="boton">3. ¿Tu personaje es mujer?</button>
+          <button onclick="startGame(5)"class="boton">4. ¿Tu personaje vuela?</button>
+          <button onclick="startGame(6)"class="boton">5. Tu personaje es el Chapulin Colorado</button>
+          <button onclick="startGame(7)"class="boton">6. Tu personaje es El Santo</button>
+          <button onclick="startGame(8)"class="boton">7. Tu personaje es Mama Lucha</button>
+          <button onclick="startGame(9)"class="boton">8. Tu personaje es Quetzalcoatl</button>
+          <button onclick="startGame(10)"class="boton">9. Tu personaje es El Zorro</button>
+          <button onclick="startGame(11)"class="boton">10. Tu personaje es Kaliman</button>
+          <button onclick="startGame(12)"class="boton">11. Tu personaje es El Gato Negro</button>
+          <button onclick="startGame(13)"class="boton">12. Tu personaje es Zooman</button>
+        </div>
+      </div>
+
+      <div id="juegoFinal" class="hide">
+        <h3> Mi turno, elige un personaje en tu mente </h3>
+        <div id="tablero-juego">
+          <img id="Kaliman" src="Kaliman.jpg">
+          <img id="Chapulin" src="Chapulin.jpg">
+          <img id="GatoNegro" src="Gato.jpg">
+          <br>
+          <img id="Zooman" src="Zooman.jpg">
+          <img id="Logo" src="Logo.jpg">
+          <img id="Santo" src="Santo.jpg">
+          <br>
+          <img id="MLucha" src="MLucha.jpg">
+          <img id="Quetzal" src="Quetzal.jpg">
+          <img id="Zorro" src="Zorro.jpg">
+        </div>
+        <h4> Personajes </h4>
+        <p>Chapulin Colorado, Gato Negro, Mama Lucha </p>
+        <p> El Zorro, Kaliman, Zooman </p>
+        <p> El Santo y Quetzalcoatl </p>
+      </div>
+
+
+
+
+
+      <div class="controls">
+        <button id="inicio-btn" class="inicio-btn btn"> Iniciar </button>
+        <button id="instrucciones-btn" class="instrucciones-btn btn hide"> Instrucciones </button>
+        <button id="jugar-btn" class="jugar-btn btn hide"> Jugar </button>
+        <button id="siguiente-btn" class="siguiente-btn btn hide"> VAMOS! </button>
+      </div>
+
+
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,122 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+body{
+  margin: 0;
+  font-size: 16px;
+  background-image: url(background.gif);
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 400;
+}
+
+.container{
+  width: 800px;
+  max-width: 80%;
+  background-color: #A33F39;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.tablero{
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8,5vw);
+  grid-gap: 15px;
+  display: grid;
+
+}
+
+.tablero-juego{
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8,5vw);
+  grid-gap: 15px;
+  display: grid;
+
+}
+#LogoB{
+  width:700px;
+  height: 700px;
+}
+#Zorro{
+  width: 120px;
+  height: 120px;
+}
+#Quetzal{
+  width: 120px;
+  height: 120px;
+}
+#MLucha{
+  width: 120px;
+  height: 120px;
+}
+#Santo{
+  width: 120px;
+  height: 120px;
+}
+#Logo{
+  width: 120px;
+  height: 120px;
+}
+#Zooman{
+  width: 120px;
+  height: 120px;
+}
+#Kaliman{
+  width: 120px;
+  height: 120px;
+}
+#Chapulin{
+  width: 120px;
+  height: 120px;
+}
+#GatoNegro{
+  width: 120px;
+  height: 120px;
+}
+.boton{
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+}
+
+.boton:hover{
+  border-color: white;
+}
+
+.inicio-btn, .siguiente-btn, .jugar-btn, .instrucciones-btn{
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
